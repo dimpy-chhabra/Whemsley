@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:padding="@dimen/activity_horizontal_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.dimpy.whemsley.aboutMe_frag"
+    tools:showIn="@layout/fragment_about_me_frag">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:id="@+id/ivContactItem1"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:src="@drawable/ic_face_black_24dp" />
+
+            <TextView
+                android:id="@+id/textView_Adress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_toEndOf="@id/ivContactItem1"
+                android:layout_toRightOf="@id/ivContactItem1"
+                android:text="Mr. John Smith"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/textView_Information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_Adress"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@id/ivContactItem1"
+                android:layout_toRightOf="@id/ivContactItem1"
+                android:text="Procurement Head"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#727272" />
+
+            <TextView
+                android:id="@+id/textView_EntryTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_Information"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_toEndOf="@id/ivContactItem1"
+                android:layout_toRightOf="@id/ivContactItem1"
+                android:text="Lipsum dit serum"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#727272" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:background="#c0c0c0"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:id="@+id/textView_Det0_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manager Dets:"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                 />
+            <TextView
+                android:id="@+id/textView_Det0_2"
+                android:layout_width="match_parent"
+                android:layout_marginTop="7sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_Det0_1"
+                android:text="Mr. Chandrashekhar"
+                />
+            <TextView
+                android:id="@+id/textView_Det0_3"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_Det0_2"
+                android:text="+61 41760001"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:id="@+id/textView_Det1_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Today's Tasks:"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+            <TextView
+                android:id="@+id/textView_Det1_2"
+                android:layout_width="match_parent"
+                android:layout_marginTop="7sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_Det1_1"
+                android:text="Incoming batch @1130 hrs"
+                />
+            <TextView
+                android:id="@+id/textView_Det1_3"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_Det1_2"
+                android:text="Meeting of heads @1330 hrs"
+                />
+            <TextView
+                android:id="@+id/textView_Det1_4"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_Det1_3"
+                android:text="Maintainence Chores on Trolly 8273"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

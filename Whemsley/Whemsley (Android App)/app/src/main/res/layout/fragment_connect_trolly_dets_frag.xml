@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.example.dimpy.whemsley.connectTrollyDets_frag">
+
+    <android.support.v4.widget.ContentLoadingProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="95sp"
+        android:layout_marginBottom="5sp"
+        android:background="#c0c0c0"/>
+    <TextView
+        android:id="@+id/TextView_AddTrollyDets"
+        android:layout_width="match_parent"
+        android:typeface="sans"
+        android:layout_height="wrap_content"
+        android:padding="16sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Tap the following button and scan the respective \n TROLLY's \nQR code:"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="5sp"
+        android:background="#c0c0c0"/>
+
+    <ImageButton
+        android:id="@+id/scan_button_trolly"
+        android:layout_width="200sp"
+        android:layout_marginTop="10dp"
+        android:layout_height="200sp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="centerCrop"
+        android:shadowColor="@color/colorHoloText"
+        android:shadowDx="1"
+        android:layout_below="@id/textView_0"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:src="@drawable/shape" />
+
+</LinearLayout>

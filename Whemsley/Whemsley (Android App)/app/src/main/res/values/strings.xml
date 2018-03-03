@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Whemsley</string>
+    <string name="title_addPackage">Add Package</string>
+    <string name="title_viewTrolly">View Trolly</string>
+    <string name="title_search">Search</string>
+    <string name="title_myTransactions">My Work</string>
+    <string name="title_about">Me</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

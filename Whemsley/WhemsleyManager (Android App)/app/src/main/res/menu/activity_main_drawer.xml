@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_view_warehouse"
+            android:icon="@drawable/ic_view_list_2x"
+            android:title="View Warehouse" />
+        <item
+            android:id="@+id/nav_search_package"
+            android:icon="@drawable/ic_search_18pt_2x"
+            android:title="Search Package" />
+        <item
+            android:id="@+id/nav_view_trolly"
+            android:icon="@drawable/ic_trolly_black_24dp"
+            android:title="View Trolly" />
+        <item
+            android:id="@+id/nav_view_emp"
+            android:icon="@drawable/ic_face_black_24dp"
+            android:title="View Employee" />
+        <item
+            android:id="@+id/nav_transactions"
+            android:icon="@drawable/ic_voicemail_black_36dp"
+            android:title="Transactions from today" />
+        <item
+            android:id="@+id/nav_lockdown"
+            android:icon="@drawable/ic_lock_2x"
+            android:title="Lockdown" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+
+        </menu>
+    </item>
+
+</menu>

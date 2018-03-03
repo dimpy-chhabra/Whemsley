@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dimpy.whemsleymanager.mainActivity_frag">
+
+    <!-- TODO: Update blank fragment layout -->
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="70sp"
+        android:layout_marginBottom="5sp"
+        android:background="#c0c0c0"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="HI! Welcome to Whemsley Manager App" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="25sp"
+        android:layout_marginBottom="5sp"
+        android:background="#c0c0c0"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:src="@drawable/redwarehouse"
+        android:scaleType="centerInside"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="25sp"
+        android:layout_marginBottom="5sp"
+        android:background="#c0c0c0"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="25sp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Check out the Drawer to see what all you can do here!" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="5sp"
+        android:background="#c0c0c0"/>
+
+</LinearLayout>

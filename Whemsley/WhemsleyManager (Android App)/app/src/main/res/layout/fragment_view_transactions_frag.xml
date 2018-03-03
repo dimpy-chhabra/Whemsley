@@ -1,0 +1,33 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10sp"
+    android:padding="16sp"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context="com.example.dimpy.whemsleymanager.viewTransactions_frag">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16sp"
+        android:id="@+id/tv0"
+        android:layout_marginTop="16sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Following are the jobs done by you today:"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="10sp"
+        android:background="#c0c0c0"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/listView"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

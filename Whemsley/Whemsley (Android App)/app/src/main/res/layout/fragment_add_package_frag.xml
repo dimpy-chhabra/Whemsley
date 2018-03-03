@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.example.dimpy.whemsley.addPackage_frag">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/warehouse"
+        android:scaleType="center"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/editText_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Package Details:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+        <EditText
+            android:id="@+id/editText_2"
+            android:layout_width="match_parent"
+            android:layout_marginTop="7sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText_1"
+            android:text="Package ID\n"
+            android:textColor="@color/secondary_text"
+            />
+
+        <EditText
+            android:id="@+id/editText_3"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText_2"
+            android:text="Details of Package\n\n"
+            android:textColor="@color/secondary_text"
+            />
+        <EditText
+            android:id="@+id/editText_4"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText_3"
+            android:text="Other Details of Package\n\n"
+            android:textColor="@color/secondary_text"
+            />
+        <EditText
+            android:id="@+id/editText_5"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText_4"
+            android:text="Stamp Number\n\n"
+            android:textColor="@color/secondary_text"
+            />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:src="@android:drawable/ic_media_ff"
+            android:layout_below="@id/editText_5"/>
+
+        <TextView
+            android:id="@+id/textView_0"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fab"
+            android:text="Either submit by tapping the floating button \n OR \n scan Barcode by clicking on the button below"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@color/primary_text"
+            />
+
+
+        <ImageButton
+            android:id="@+id/scan_button"
+            android:layout_width="60sp"
+            android:layout_marginTop="10dp"
+            android:layout_height="60sp"
+            android:layout_centerInParent="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="centerCrop"
+            android:shadowColor="@color/colorHoloText"
+            android:shadowDx="1"
+            android:layout_below="@id/textView_0"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:src="@drawable/shape" />
+        
+    </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
